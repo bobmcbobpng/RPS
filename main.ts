@@ -33,17 +33,17 @@ basic.forever(function () {
             basic.showIcon(IconNames.Asleep)
         } else {
             if (hand1 == 1 && hand2 == 2) {
-                basic.showIcon(IconNames.Happy)
+                basic.showIcon(IconNames.Sad)
             } else if (hand1 == 1 && hand2 == 3) {
-                basic.showIcon(IconNames.Sad)
+                basic.showIcon(IconNames.Happy)
             } else if (hand1 == 2 && hand2 == 1) {
-                basic.showIcon(IconNames.Sad)
+                basic.showIcon(IconNames.Happy)
             } else if (hand1 == 2 && hand2 == 3) {
-                basic.showIcon(IconNames.Happy)
-            } else if (hand1 == 3 && hand2 == 1) {
-                basic.showIcon(IconNames.Happy)
-            } else {
                 basic.showIcon(IconNames.Sad)
+            } else if (hand1 == 3 && hand2 == 1) {
+                basic.showIcon(IconNames.Sad)
+            } else {
+                basic.showIcon(IconNames.Happy)
             }
         }
     }
